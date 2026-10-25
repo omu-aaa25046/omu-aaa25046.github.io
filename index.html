@@ -7,7 +7,7 @@
     <script>
       function updateClock()
       {
-          var now =new Date();
+          var now = new Date();
           var hours =now.getHours();
           var minutes=now.getMinutes();
           var seconds=now.getSeconds();
@@ -18,6 +18,8 @@
 
           var timeString = hours + ':' + minutes + ':' + seconds;
           document.getElementById('clock').innerHTML = timeString;
+
+          
       }
        setInterval(updateClock, 1000);
        window.onload = updateClock;
@@ -26,7 +28,8 @@
     
 <body>
     <h1>現在時刻</h1>
-    <div id="clock" style="font-size: 48px; font-weight: bold; color: blue;">
+　  <div id="clock" style="font-size: 48px; font-weight: bold; color: blue; 
+       border: 2px solid black; background-color: lightgray;">
         00:00:00
     </div>
     <header>
